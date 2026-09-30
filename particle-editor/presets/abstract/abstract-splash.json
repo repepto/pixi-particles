@@ -1,0 +1,168 @@
+{
+  "name": "particle system",
+  "maxParticles": 3000,
+  "simulationSpace": "world",
+  "blendMode": "normal",
+  "texture": {
+    "source": "builtin",
+    "kind": "circle"
+  },
+  "emission": {
+    "emitterType": "circle",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 80,
+    "emitterHeight": 16,
+    "emitterRadius": 111,
+    "emitterAlongShape": true,
+    "rate": 888,
+    "directionMin": -115,
+    "directionMax": -65,
+    "duration": 0.1,
+    "loop": false
+  },
+  "base": {
+    "lifetime": {
+      "min": 0.2,
+      "max": 2
+    },
+    "angleKeepDirection": true,
+    "startSize": 0.3,
+    "startColors": [
+      "#de66ff",
+      "#ff3da5",
+      "#daff24",
+      "#00eeff",
+      "#ffffff"
+    ]
+  },
+  "overLifetime": {
+    "size": [
+      {
+        "t": 0,
+        "value": 0
+      },
+      {
+        "t": 0.07,
+        "value": 1
+      },
+      {
+        "t": 1,
+        "value": 0
+      }
+    ],
+    "scaleXY": {
+      "x": [
+        {
+          "t": 0,
+          "value": 11
+        },
+        {
+          "t": 0.1,
+          "value": 1
+        },
+        {
+          "t": 0.2,
+          "value": 1
+        },
+        {
+          "t": 0.21,
+          "value": 7
+        },
+        {
+          "t": 0.22,
+          "value": 1
+        },
+        {
+          "t": 0.31,
+          "value": 1
+        },
+        {
+          "t": 0.32,
+          "value": 0.3
+        },
+        {
+          "t": 0.37,
+          "value": 0.3
+        },
+        {
+          "t": 0.38,
+          "value": 4
+        },
+        {
+          "t": 0.4,
+          "value": 0
+        },
+        {
+          "t": 0.41,
+          "value": 0.3
+        },
+        {
+          "t": 0.7,
+          "value": 0.3
+        },
+        {
+          "t": 0.71,
+          "value": 0.3
+        },
+        {
+          "t": 0.75,
+          "value": 22
+        },
+        {
+          "t": 1,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ],
+      "y": [
+        {
+          "t": 0,
+          "value": 0.4
+        },
+        {
+          "t": 0.3,
+          "value": 0.4
+        },
+        {
+          "t": 0.32,
+          "value": 11
+        },
+        {
+          "t": 0.37,
+          "value": 1
+        },
+        {
+          "t": 0.38,
+          "value": 0.4
+        },
+        {
+          "t": 0.4,
+          "value": 0.1
+        },
+        {
+          "t": 0.41,
+          "value": 0.3
+        },
+        {
+          "t": 0.75,
+          "value": 0.3
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ]
+    }
+  },
+  "forces": {},
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}

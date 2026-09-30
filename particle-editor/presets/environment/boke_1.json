@@ -1,0 +1,84 @@
+{
+  "name": "boke_1",
+  "maxParticles": 77,
+  "simulationSpace": "world",
+  "blendMode": "add",
+  "texture": {
+    "source": "builtin",
+    "kind": "circle"
+  },
+  "emission": {
+    "emitterType": "box",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 1400,
+    "emitterHeight": 800,
+    "emitterRadius": 24,
+    "rate": 2,
+    "directionMin": -100,
+    "directionMax": -80
+  },
+  "base": {
+    "lifetime": {
+      "min": 8,
+      "max": 14
+    },
+    "angularVelocity": {
+      "min": -5,
+      "max": 5
+    },
+    "startSize": {
+      "min": 4,
+      "max": 12
+    },
+    "startAlpha": {
+      "min": 0.02,
+      "max": 0.07
+    }
+  },
+  "overLifetime": {
+    "alpha": [
+      {
+        "t": 0,
+        "value": 0
+      },
+      {
+        "t": 0.08,
+        "value": 1
+      },
+      {
+        "t": 1,
+        "value": 0
+      }
+    ],
+    "color": [
+      {
+        "t": 0,
+        "color": "#ff00d0"
+      },
+      {
+        "t": 0.45,
+        "color": "#9900ff"
+      },
+      {
+        "t": 1,
+        "color": "#04ff00"
+      }
+    ]
+  },
+  "forces": {
+    "turbulence": {
+      "amplitudeX": 30,
+      "amplitudeY": 1800,
+      "spatialScale": 777,
+      "timeScale": 444,
+      "seed": 7
+    }
+  },
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}

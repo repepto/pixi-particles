@@ -1,0 +1,101 @@
+{
+  "name": "waterfall",
+  "maxParticles": 3000,
+  "simulationSpace": "world",
+  "blendMode": "add",
+  "texture": {
+    "source": "builtin",
+    "kind": "circle"
+  },
+  "emission": {
+    "emitterType": "box",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 222,
+    "emitterHeight": 1,
+    "emitterRadius": 24,
+    "rate": 44,
+    "directionMin": -100,
+    "directionMax": -80
+  },
+  "base": {
+    "lifetime": 1.2,
+    "startSpeed": {
+      "min": 90,
+      "max": 220
+    },
+    "angularVelocity": {
+      "min": -5,
+      "max": 5
+    },
+    "startSize": {
+      "min": 0.2,
+      "max": 0.75
+    }
+  },
+  "overLifetime": {
+    "size": [
+      {
+        "t": 0,
+        "value": 0.15
+      },
+      {
+        "t": 0.12,
+        "value": 1
+      },
+      {
+        "t": 0.75,
+        "value": 0.85
+      },
+      {
+        "t": 1,
+        "value": 0
+      }
+    ],
+    "alpha": [
+      {
+        "t": 0,
+        "value": 0
+      },
+      {
+        "t": 0.08,
+        "value": 0
+      },
+      {
+        "t": 0.8,
+        "value": 1
+      },
+      {
+        "t": 1,
+        "value": 0
+      },
+      {
+        "t": 2,
+        "value": 0
+      }
+    ],
+    "color": [
+      {
+        "t": 0,
+        "color": "#00d5ff"
+      },
+      {
+        "t": 0.45,
+        "color": "#ffea00"
+      },
+      {
+        "t": 1,
+        "color": "#ff00d0"
+      }
+    ]
+  },
+  "forces": {
+    "gravity": 800
+  },
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}

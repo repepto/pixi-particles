@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tgz
+*.tsbuildinfo
+.DS_Store
+.idea/
+.ai/
+.npmrc
+!particle-core-1.0.5.tgz

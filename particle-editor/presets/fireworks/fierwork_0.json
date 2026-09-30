@@ -1,0 +1,95 @@
+{
+  "name": "firework_0",
+  "maxParticles": 3000,
+  "simulationSpace": "world",
+  "blendMode": "normal",
+  "texture": {
+    "source": "builtin",
+    "kind": "star"
+  },
+  "emission": {
+    "emitterType": "dot",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 80,
+    "emitterHeight": 16,
+    "emitterRadius": 0,
+    "rate": 222,
+    "directionMin": 0,
+    "directionMax": 360,
+    "burst": 77,
+    "duration": 0.2,
+    "loop": false
+  },
+  "base": {
+    "lifetime": {
+      "min": 1,
+      "max": 5
+    },
+    "angularVelocity": {
+      "min": -11,
+      "max": 11
+    },
+    "startSize": {
+      "min": 0.05,
+      "max": 0.2
+    },
+    "startColors": [
+      "#f5d1ff",
+      "#ffe5fd",
+      "#dbf3ff",
+      "#fbffeb",
+      "#ffffff"
+    ]
+  },
+  "overLifetime": {
+    "size": [
+      {
+        "t": 0,
+        "value": 1
+      },
+      {
+        "t": 0.74,
+        "value": 1
+      },
+      {
+        "t": 1,
+        "value": 0
+      }
+    ],
+    "speed": {
+      "curve": [
+        {
+          "t": 0,
+          "value": 777,
+          "randomOffset": 222
+        },
+        {
+          "t": 0.1,
+          "value": 22,
+          "randomOffset": 22
+        }
+      ],
+      "fade": true
+    },
+    "flickering": {
+      "gap": 0.005,
+      "min": 0.5,
+      "max": 1,
+      "randomGapOffset": 0.005,
+      "randomMinMaxOffset": 0,
+      "fade": false,
+      "startTime": 0,
+      "endTime": 1
+    }
+  },
+  "forces": {
+    "gravity": 77
+  },
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}

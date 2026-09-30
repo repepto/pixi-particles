@@ -1,0 +1,128 @@
+{
+  "name": "color-circles-background",
+  "maxParticles": 3000,
+  "simulationSpace": "world",
+  "blendMode": "add",
+  "texture": {
+    "source": "builtin",
+    "kind": "circle"
+  },
+  "emission": {
+    "emitterType": "box",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 80,
+    "emitterHeight": 16,
+    "emitterRadius": 24,
+    "rate": 222,
+    "directionMin": 0,
+    "directionMax": 360
+  },
+  "base": {
+    "lifetime": 2,
+    "startSpeed": {
+      "min": 400,
+      "max": 500
+    },
+    "angularVelocity": {
+      "min": -5,
+      "max": 5
+    },
+    "startSize": {
+      "min": 0.2,
+      "max": 0.7
+    },
+    "startColors": [
+      "#ff0088",
+      "#fb00ff",
+      "#00bfff",
+      "#00ff9d",
+      "#99ff00",
+      "#ffea00",
+      "#ff9500",
+      "#ff0000"
+    ]
+  },
+  "overLifetime": {
+    "size": [
+      {
+        "t": 0,
+        "value": 0.7
+      },
+      {
+        "t": 0.12,
+        "value": 2
+      },
+      {
+        "t": 0.75,
+        "value": 8
+      },
+      {
+        "t": 1,
+        "value": 0
+      }
+    ],
+    "alpha": [
+      {
+        "t": 0,
+        "value": 0
+      },
+      {
+        "t": 0.1,
+        "value": 1
+      },
+      {
+        "t": 0.2,
+        "value": 0
+      },
+      {
+        "t": 0.3,
+        "value": 1
+      },
+      {
+        "t": 0.4,
+        "value": 0
+      },
+      {
+        "t": 0.5,
+        "value": 1
+      },
+      {
+        "t": 0.6,
+        "value": 0
+      },
+      {
+        "t": 0.7,
+        "value": 1
+      },
+      {
+        "t": 0.8,
+        "value": 0
+      },
+      {
+        "t": 0.9,
+        "value": 0
+      },
+      {
+        "t": 1,
+        "value": 1
+      }
+    ]
+  },
+  "forces": {
+    "gravity": 200,
+    "turbulence": {
+      "amplitudeX": 300,
+      "amplitudeY": 1800,
+      "spatialScale": 777,
+      "timeScale": 444,
+      "seed": 77
+    }
+  },
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+release/
+*.tsbuildinfo
+.DS_Store
+.idea/
+.vite/
+.ai/
+__MACOSX/
+.npmrc
+.env
+.env.*
+*.tgz

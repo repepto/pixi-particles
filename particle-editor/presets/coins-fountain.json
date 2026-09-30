@@ -1,0 +1,97 @@
+{
+  "name": "coins-fountain",
+  "maxParticles": 3000,
+  "simulationSpace": "world",
+  "blendMode": "normal",
+  "texture": {
+    "source": "sequence",
+    "fileNames": [
+      "coin0001.png",
+      "coin0002.png",
+      "coin0003.png",
+      "coin0004.png",
+      "coin0005.png",
+      "coin0006.png",
+      "coin0007.png",
+      "coin0008.png",
+      "coin0009.png",
+      "coin0010.png",
+      "coin0011.png",
+      "coin0012.png",
+      "coin0013.png",
+      "coin0014.png",
+      "coin0015.png",
+      "coin0016.png",
+      "coin0017.png",
+      "coin0018.png",
+      "coin0019.png",
+      "coin0020.png",
+      "coin0021.png",
+      "coin0022.png",
+      "coin0023.png",
+      "coin0024.png",
+      "coin0025.png",
+      "coin0026.png",
+      "coin0027.png",
+      "coin0028.png",
+      "coin0029.png",
+      "coin0030.png"
+    ],
+    "randomStart": true,
+    "frameRate": 55
+  },
+  "emission": {
+    "emitterType": "box",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 80,
+    "emitterHeight": 16,
+    "emitterRadius": 24,
+    "rate": 90,
+    "directionMin": -100,
+    "directionMax": -80
+  },
+  "base": {
+    "lifetime": 4,
+    "startSpeed": {
+      "min": 1000,
+      "max": 1111
+    },
+    "angularVelocity": {
+      "min": -5,
+      "max": 5
+    },
+    "startSize": {
+      "min": 0.2,
+      "max": 0.3
+    }
+  },
+  "overLifetime": {
+    "alpha": [
+      {
+        "t": 0,
+        "value": 0
+      },
+      {
+        "t": 0.08,
+        "value": 1
+      }
+    ]
+  },
+  "forces": {
+    "gravity": 800,
+    "turbulence": {
+      "amplitudeX": 30,
+      "amplitudeY": 1800,
+      "spatialScale": 777,
+      "timeScale": 444,
+      "seed": 7
+    }
+  },
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}

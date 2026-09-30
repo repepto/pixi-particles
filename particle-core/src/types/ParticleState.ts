@@ -1,0 +1,23 @@
+export type ParticleState = {
+    active: boolean;
+    age: number;
+    lifetime: number;
+    x: number;
+    y: number;
+    vx: number;
+    vy: number;
+    directionX: number;
+    directionY: number;
+    rotation: number;
+    angularVelocity: number;
+    startSize: number;
+    startAlpha: number;
+    startColor: number;
+    sequenceFrameOffset: number;
+    speedOverLifetimeRandomOffsets: number[];
+    flickeringElapsed: number;
+    flickeringGap: number;
+    flickeringFromAlpha: number;
+    flickeringToAlpha: number;
+    flickeringTargetIsMax: boolean;
+};

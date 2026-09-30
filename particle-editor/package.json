@@ -1,0 +1,37 @@
+{
+  "name": "@particle/editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@particle/core": "file:../particle-core/particle-core-1.0.5.tgz",
+    "jszip": "^3.10.1",
+    "pixi.js": "8.18.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "tsx": "4.20.6",
+    "vite": "5.4.21"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repepto/pixi-particles.git",
+    "directory": "particle-editor"
+  },
+  "bugs": {
+    "url": "https://github.com/repepto/pixi-particles/issues"
+  },
+  "homepage": "https://github.com/repepto/pixi-particles#readme"
+}

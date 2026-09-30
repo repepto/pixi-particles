@@ -1,0 +1,70 @@
+{
+  "name": "particle system",
+  "maxParticles": 3000,
+  "simulationSpace": "world",
+  "blendMode": "normal",
+  "texture": {
+    "source": "builtin",
+    "kind": "diamond"
+  },
+  "emission": {
+    "emitterType": "dot",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 80,
+    "emitterHeight": 16,
+    "emitterRadius": 44,
+    "emitterAlongShape": true,
+    "rate": 333,
+    "directionMin": 0,
+    "directionMax": 360,
+    "duration": 0.14,
+    "loop": false
+  },
+  "base": {
+    "lifetime": {
+      "min": 0.1,
+      "max": 0.3
+    },
+    "startSpeed": {
+      "min": 444,
+      "max": 777
+    },
+    "angleKeepDirection": true,
+    "startSize": {
+      "min": 0.05,
+      "max": 0.1
+    }
+  },
+  "overLifetime": {
+    "scaleXY": {
+      "x": [
+        {
+          "t": 0,
+          "value": 22
+        },
+        {
+          "t": 1,
+          "value": 7
+        }
+      ],
+      "y": [
+        {
+          "t": 0,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ]
+    }
+  },
+  "forces": {},
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}

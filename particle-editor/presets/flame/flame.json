@@ -1,0 +1,87 @@
+{
+  "name": "particle system",
+  "maxParticles": 3000,
+  "simulationSpace": "world",
+  "blendMode": "add",
+  "texture": {
+    "source": "builtin",
+    "kind": "soft-circle"
+  },
+  "emission": {
+    "emitterType": "box",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 44,
+    "emitterHeight": 16,
+    "emitterRadius": 0,
+    "rate": 90,
+    "directionMin": -90,
+    "directionMax": -90
+  },
+  "base": {
+    "lifetime": {
+      "min": 0.1,
+      "max": 1
+    },
+    "startSpeed": {
+      "min": 44,
+      "max": 280
+    },
+    "angleKeepDirection": true,
+    "startSize": {
+      "min": 0.2,
+      "max": 0.75
+    }
+  },
+  "overLifetime": {
+    "scaleXY": {
+      "x": [
+        {
+          "t": 0,
+          "value": 2
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ],
+      "y": [
+        {
+          "t": 0,
+          "value": 2
+        },
+        {
+          "t": 0.3,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 0
+        }
+      ]
+    },
+    "color": [
+      {
+        "t": 0,
+        "color": "#f42f2f"
+      },
+      {
+        "t": 0.45,
+        "color": "#ff9a2f"
+      },
+      {
+        "t": 1,
+        "color": "#3b1700"
+      }
+    ]
+  },
+  "forces": {
+    "turbulence": {
+      "amplitudeX": 333,
+      "amplitudeY": 111,
+      "spatialScale": 22,
+      "timeScale": 0.8,
+      "seed": 7
+    }
+  }
+}

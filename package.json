@@ -1,0 +1,25 @@
+{
+  "name": "pixi-particles",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "setup": "node scripts/project.mjs setup",
+    "dev": "npm --prefix particle-editor run dev",
+    "check": "node scripts/project.mjs check",
+    "build": "node scripts/project.mjs build",
+    "preview": "npm --prefix particle-editor run preview",
+    "release": "node scripts/project.mjs release"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repepto/pixi-particles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/repepto/pixi-particles/issues"
+  },
+  "homepage": "https://github.com/repepto/pixi-particles#readme"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "star-sky.json",
+  "maxParticles": 2000,
+  "simulationSpace": "world",
+  "blendMode": "add",
+  "texture": {
+    "source": "builtin",
+    "kind": "star"
+  },
+  "emission": {
+    "emitterType": "box",
+    "emitterX": 0,
+    "emitterY": 0,
+    "emitterWidth": 1400,
+    "emitterHeight": 800,
+    "emitterRadius": 24,
+    "rate": 2000,
+    "directionMin": -100,
+    "directionMax": -80,
+    "burst": 777,
+    "duration": 0,
+    "loop": false
+  },
+  "base": {
+    "lifetime": {
+      "min": 14,
+      "max": 7777777
+    },
+    "angularVelocity": {
+      "min": -77,
+      "max": 77
+    },
+    "startSize": {
+      "min": 0.01,
+      "max": 0.12
+    },
+    "startColors": [
+      "#d6feff",
+      "#ffccf6",
+      "#f5e0ff",
+      "#9efff4",
+      "#ffffff",
+      "#ffffff",
+      "#ffffff"
+    ]
+  },
+  "overLifetime": {},
+  "forces": {},
+  "boundsArea": {
+    "x": -200,
+    "y": -200,
+    "width": 1800,
+    "height": 1200
+  }
+}
