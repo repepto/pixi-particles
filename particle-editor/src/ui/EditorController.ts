@@ -1,4 +1,4 @@
-import type { CurvePoint } from "@particle/core";
+import type { CurvePoint } from "pixi-particle";
 import { createConfigArchive, readConfigArchive } from "../config/archive";
 import { buildConfigDiff, getExpectedTextureNames, parseSerializedConfig, toEditorConfig, type EditorSerializedConfig } from "../config/serialization";
 import { createDefaultEditorConfig } from "../config/defaults";

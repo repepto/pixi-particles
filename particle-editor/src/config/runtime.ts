@@ -18,7 +18,7 @@ import {
     VectorCurveModule,
     type INumberProvider,
     type ParticleSystemConfig,
-} from "@particle/core";
+} from "pixi-particle";
 import type { EditorConfig } from "./types";
 import type { EditorSerializedConfig } from "./serialization";
 import { getBuiltinParticleTexture } from "../textures/BuiltinTextures";

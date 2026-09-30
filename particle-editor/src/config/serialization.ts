@@ -1,4 +1,4 @@
-import type { SerializedConfig, SerializedConfigPatch } from "@particle/core";
+import type { SerializedConfig, SerializedConfigPatch } from "pixi-particle";
 import { createDefaultEditorConfig } from "./defaults";
 import type { EditorConfig } from "./types";
 

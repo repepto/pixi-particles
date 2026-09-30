@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { ParticleSystem } from "@particle/core";
+import { ParticleSystem } from "pixi-particle";
 import { Texture, TextureSource } from "pixi.js";
 import { createDefaultEditorConfig } from "../src/config/defaults";
 import { buildSerializableConfig } from "../src/config/runtime";

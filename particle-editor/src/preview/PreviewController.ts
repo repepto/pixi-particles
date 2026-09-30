@@ -1,5 +1,5 @@
 import { Application } from "pixi.js";
-import { ParticleSystem } from "@particle/core";
+import { ParticleSystem } from "pixi-particle";
 import type { EditorConfig } from "../config/types";
 import { buildRuntimeConfig } from "../config/runtime";
 import type { UploadedTextureAsset } from "../textures/RasterTextureLoader";

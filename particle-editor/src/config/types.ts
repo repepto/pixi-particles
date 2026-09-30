@@ -1,4 +1,4 @@
-import type { BlendModeName, CurvePoint } from "@particle/core";
+import type { BlendModeName, CurvePoint } from "pixi-particle";
 
 export type NumberMode = "constant" | "min-max";
 export type EmitterType = "dot" | "circle" | "box";

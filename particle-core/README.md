@@ -1,11 +1,19 @@
-# @particle/core
+# pixi-particle
 
 Modular 2D particle effects for PixiJS 8. Distributed as compiled ESM with TypeScript declarations. PixiJS is a peer dependency.
+
+## Install
+
+```sh
+npm install pixi-particle pixi.js@^8.16.0
+```
+
+Requires Node.js 20+ for tooling and PixiJS 8.16 or newer within version 8. The package exports ESM only.
 
 ## Install the local package
 
 ```sh
-npm install ./particle-core-1.0.5.tgz pixi.js@8.18.1
+npm install ./pixi-particle-1.0.5.tgz pixi.js@8.18.1
 ```
 
 In the full project, `npm run setup` builds this tarball and installs it into the editor. To create just the package from this directory:
@@ -28,7 +36,7 @@ import {
     RandomRangeModule,
     ConeDirectionModule,
     CurveModule,
-} from "@particle/core";
+} from "pixi-particle";
 
 const app = new Application();
 await app.init({ resizeTo: window, background: "#151821" });
@@ -78,7 +86,7 @@ Textures supplied by the caller remain caller-owned. Destroy them only after eve
 
 ```ts
 import { Assets } from "pixi.js";
-import { ParticleSystem, type SerializedConfig } from "@particle/core";
+import { ParticleSystem, type SerializedConfig } from "pixi-particle";
 
 // For raster/sequence configurations, preload each filename as an Assets alias:
 // await Assets.load({ alias: "spark.png", src: "/textures/spark.png" });

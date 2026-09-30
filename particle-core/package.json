@@ -1,5 +1,5 @@
 {
-  "name": "@particle/core",
+  "name": "pixi-particle",
   "description": "Modular 2D particle effects for PixiJS with pooling and serializable configuration.",
   "version": "1.0.5",
   "type": "module",
@@ -45,5 +45,17 @@
   "bugs": {
     "url": "https://github.com/repepto/pixi-particles/issues"
   },
-  "homepage": "https://github.com/repepto/pixi-particles#readme"
+  "homepage": "https://github.com/repepto/pixi-particles#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "pixi",
+    "pixijs",
+    "particles",
+    "particle-system",
+    "typescript",
+    "2d"
+  ]
 }

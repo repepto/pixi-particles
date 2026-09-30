@@ -7,6 +7,14 @@ A modular 2D particle engine for **TypeScript and PixiJS 8**, with a browser edi
 
 The engine and editor are separate packages. The editor consumes the engine as a **local npm tarball**; no private registry or account is required.
 
+## Use the engine in your project
+
+```sh
+npm install pixi-particle pixi.js@^8.16.0
+```
+
+See the [engine integration guide](particle-core/README.md) for usage examples.
+
 ## Quick start
 
 Requirements: Node.js 20 or newer and npm. `.nvmrc` selects Node.js 22. The first installation needs access to the public npm registry.
@@ -18,7 +26,7 @@ npm run setup
 npm run dev
 ```
 
-Open the URL printed by Vite (normally `http://localhost:5173`). `setup` installs the engine dependencies, compiles the engine, creates `particle-core/particle-core-1.0.5.tgz`, updates its checksum in the editor lockfile, and installs the editor.
+Open the URL printed by Vite (normally `http://localhost:5173`). `setup` installs the engine dependencies, compiles the engine, creates `particle-core/pixi-particle-1.0.5.tgz`, updates its checksum in the editor lockfile, and installs the editor.
 
 The repository and shareable archive include the tarball, so the editor can also be started directly:
 
